@@ -1,7 +1,8 @@
 /* Alexander Rozhkov, frontend developer.
   23.10.2022
-  www.alexrozhkov.com
+  alexrozhkov.com
 */
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.woff") format("woff");
@@ -278,6 +279,7 @@ img {
 }
 
 .services {
+  margin-bottom: -180px;
   padding: 150px 0px 150px 0;
 }
 
@@ -320,4 +322,194 @@ img {
 .services-link {
   margin-bottom: 0;
   margin-top: auto;
+}
+
+/* ------------------------------ */
+
+.get-started {
+  position: relative;
+  top: 180px;
+  padding: 70px 0;
+  width: 88%;
+  background-color: #fafafa;
+  box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+}
+
+.get-started-title {
+  max-width: 822px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 123%;
+  color: #4d533c;
+}
+.get-startet-link {
+  text-transform: uppercase;
+}
+/* ------------------------------ */
+
+.footer {
+  padding-top: 300px;
+  color: var(--color-white);
+  background-image: url(../img/footer-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 52px;
+  border-bottom: 1px solid #5d6544;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-right: 128px;
+}
+
+.footer-contacts-text {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 250%;
+  color: #b6c197;
+}
+
+.footer-contacts-value {
+  display: inline-block;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 250%;
+  color: var(--color-white);
+}
+
+.footer-middle {
+  --grid-gap: 70px;
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px 0;
+  border-bottom: 1px solid #5d6544;
+}
+
+.footer-column:last-child {
+  position: relative;
+}
+
+.footer-column:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(-1 * (var(--grid-gap)));
+  width: 1px;
+  height: 100%;
+  background-color: #5d6544;
+}
+
+.footer-title {
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 238%;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.footer-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 250%;
+  color: #b6c197;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin-bottom: 23px;
+  font-size: 16px;
+  line-height: 162%;
+  color: #b6c197;
+}
+
+.footer-mail {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 158%;
+  color: var(--color-white);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 11px;
+}
+
+.social-link {
+  display: block;
+  width: 33px;
+  height: 33px;
+  background-color: #444a34;
+  border-radius: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 20px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: #ffd723;
+}
+
+.social-link-fb {
+  background-image: url("../img/fb.svg");
+}
+
+.social-link-tw {
+  background-image: url("../img/tw.svg");
+}
+
+.social-link-g {
+  background-image: url("../img/inst.svg");
+}
+
+.social-link-in {
+  background-image: url("../img/in.svg");
+}
+
+.copyright {
+  display: inline-block;
+  line-height: 250%;
+  padding-right: 30px;
+  color: #b5c096;
+  cursor: pointer;
+}
+
+.logo-right {
+  display: inline-block;
+}
+
+.copyright:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.copyright-logo {
+  background: url("../img/footer-logo.svg") right no-repeat;
 }
