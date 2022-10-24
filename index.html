@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alexrozhkov.com</title>
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
 
 
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a href="#" class="logo">
-                <img src="#" alt="Webovio Logo">
+                <img src="./img/logo.svg" alt="Webovio Logo">
             </a>
-            <button class="burger" aria-label="Open menu">
+            <button class="burger btn-reset" aria-label="Open menu">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -29,12 +30,18 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-container">
-                <span class="hero-subtitle">Это</span>
-                <h1 class="hero-title">Креативное агентство исключительных брендов</h1>
-                <p class="hero-descr">вэбовио — ведущая фирма по стратегическому дизайну, которая создает мощные
+            <div class="hero-content">
+                <span class="hero-subtitle">Место, где воплощаются идеи</span>
+                <h1 class="hero-title">Креативное агентство <br>исключительных<br> брендов</h1>
+                <p class="hero-descr">Вэбовио — ведущая фирма по стратегическому дизайну, которая создает мощные
                     цифровые решения для стартапов и предприятий.</p>
-                <a href="#" class="hero-link link">Связаться</a>
+                <a href="#" class="hero-link link">
+                    <svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0V55L44 27.5L0 0Z" />
+                    </svg>
+
+                    <span>Связаться</span>
+                </a>
             </div>
         </div>
     </section>
