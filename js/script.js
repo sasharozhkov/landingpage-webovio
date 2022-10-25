@@ -3,6 +3,10 @@
 /* burger menu*/
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
+
+
+
+
 if (iconMenu) {
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('_lock');
@@ -50,21 +54,27 @@ function myFunction() {
     var scrolled = (winScroll / height) * 100;
     var top = window.scrollY;
     document.getElementById("myBar").style.width = scrolled + "%";
+
     /* change background when page scroll */
     if (top >= 50) {
         header.classList.add('active')
     } else {
         header.classList.remove('active')
     }
+
     /* change size header__container when page scroll */
     if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
         document.getElementById("header-container")
-            .style.minHeight = "50px";
+            .style.minHeight = "60px";
     }
     else {
         document.getElementById("header-container")
             .style.minHeight = "100px";
     }
 }
+
+
+
+
 
 

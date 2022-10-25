@@ -11,24 +11,52 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- favicon --------------------------------------------------------->
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
 
     <header class="header">
+        <!--------------- progress-bar ----------------->
         <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
         </div>
-        <div class="container header-container">
-            <a href="#" class="logo">
+
+        <div class="container" id="header-container">
+            <!--------------- logo ----------------->
+            <a title="На самый верх" data-goto=".hero" href="#" class="logo">
                 <img src="./img/logo.svg" alt="Webovio Logo">
             </a>
-            <button class="burger btn-reset" aria-label="Open menu">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-            </button>
+            <!--------------- menu ----------------->
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li>
+                        <a title="На самый верх" data-goto=".hero" href="#" class="menu__link">Главная</a>
+                    </li>
+                    <li>
+                        <a title="О нас" data-goto=".services" href="#" class="menu__link">О нас</a>
+                    </li>
+                    <li>
+                        <a title="Услуги" data-goto=".get-started" href="#" class="menu__link">Услуги</a>
+                    </li>
+                    <li>
+                        <a title="Контакты" data-goto=".footer" href="#" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </header>
 
@@ -39,7 +67,8 @@
                 <h1 class="hero-title">Креативное агентство <br>исключительных<br> брендов</h1>
                 <p class="hero-descr">Вэбовио — ведущая фирма по стратегическому дизайну, которая создает мощные
                     цифровые решения для стартапов и предприятий.</p>
-                <a href="#" class="hero-link link">
+
+                <a data-goto=".footer" href="#" class="hero-link link">
                     <svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0V55L44 27.5L0 0Z" />
                     </svg>
@@ -111,7 +140,7 @@
                 Давайте сделаем что-то удивительное вместе.
             </h2>
 
-            <a href="#" class="get-startet-link link">
+            <a data-goto=".footer" href="#" class="get-startet-link link">
                 <svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0V55L44 27.5L0 0Z" />
                 </svg>
