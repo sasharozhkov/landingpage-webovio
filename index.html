@@ -30,7 +30,7 @@
 
         <div class="container" id="header-container">
             <!--------------- logo ----------------->
-            <a title="На самый верх" data-goto=".hero" href="#" class="logo">
+            <a title="На самый верх" href="#hero-link" class="logo">
                 <img src="./img/logo.svg" alt="Webovio Logo">
             </a>
             <!--------------- menu ----------------->
@@ -39,7 +39,7 @@
                     <span></span>
                 </div>
             </div>
-
+            <!--------------- nav ----------------->
             <nav class="menu__body">
                 <ul class="menu__list">
                     <li>
@@ -56,19 +56,17 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero-link">
         <div class="container">
             <div class="hero-content">
                 <span class="hero-subtitle">Место, где воплощаются идеи</span>
                 <h1 class="hero-title">Креативное агентство <br>исключительных<br> брендов</h1>
                 <p class="hero-descr">Вэбовио — ведущая фирма по стратегическому дизайну, которая создает мощные
                     цифровые решения для стартапов и предприятий.</p>
-
-                <a data-goto=".footer" href="#" class="hero-link link">
+                <a title="Связаться" href="#footer-link" class="hero-link link">
                     <svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0V55L44 27.5L0 0Z" />
                     </svg>
@@ -82,7 +80,6 @@
         <div class="container">
             <h2 class="site-title services-title">Вэбовио - лучший способ начать идею вашего продукта</h2>
             <ul class="services-list list-reset">
-
                 <li class="services-item">
                     <h3 class="services-subtitle">Спринт<br> по дизайну</h3>
                     <p class="services-descr">Пятидневный семинар, который поможет вам ответить на важные вопросы
@@ -94,7 +91,6 @@
                         <span>Читать далее</span>
                     </a>
                 </li>
-
                 <li class="services-item">
                     <h3 class="services-subtitle">Обзорная сессия</h3>
                     <p class="services-descr">Семинар, направленный на формирование вашей бизнес-идеи, ответы на
@@ -106,7 +102,6 @@
                         <span>Читать далее</span>
                     </a>
                 </li>
-
                 <li class="services-item">
                     <h3 class="services-subtitle">UX<br> Обзор</h3>
                     <p class="services-descr">Оценка, которая поможет вам радикально улучшить ваш продукт.</p>
@@ -117,7 +112,6 @@
                         <span>Читать далее</span>
                     </a>
                 </li>
-
                 <li class="services-item">
                     <h3 class="services-subtitle">Обзор<br> кода</h3>
                     <p class="services-descr">Знаете ли вы, в чем один из главных секретов успеха
@@ -129,7 +123,6 @@
                         <span>Читать далее</span>
                     </a>
                 </li>
-
             </ul>
         </div>
     </section>
@@ -139,34 +132,28 @@
             <h2 class="get-started-title">
                 Давайте сделаем что-то удивительное вместе.
             </h2>
-
-            <a data-goto=".footer" href="#" class="get-startet-link link">
+            <a href="#" class="get-startet-link link">
                 <svg width="44" height="55" viewBox="0 0 44 55" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0V55L44 27.5L0 0Z" />
                 </svg>
                 <span>Начнём</span>
             </a>
-
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="footer-link" class="footer">
         <div class="container">
             <div class="footer-top">
-
                 <div class="footer-contacts-item">
                     <span class="footer-contacts-text">Телефон</span>
                     <a href="tel:+3250312832" class="footer-contacts-value">+(375) 877 77 77</a>
                 </div>
-
                 <div class="footer-contacts-item">
                     <span class="footer-contacts-text">Адрес</span>
                     <address class="footer-contacts-value">Москва, Тверская 11</address>
                 </div>
-
             </div>
             <div class="footer-middle">
-
                 <div class="footer-column">
                     <h3 class="footer-title">Услуги</h3>
                     <ul class="footer-list">
@@ -177,7 +164,6 @@
                         <li class="footer-item"><a href="#" class="footer-link">Разработка</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3 class="footer-title">Помощь и совет</h3>
                     <ul class="footer-list">
@@ -187,7 +173,6 @@
                         <li class="footer-item"><a href="#" class="footer-link">Вопросы</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3 class="footer-title">Компания</h3>
                     <ul class="footer-list">
@@ -197,7 +182,6 @@
                         <li class="footer-item"><a href="#" class="footer-link">Работа</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-column">
                     <h3 class="footer-title">Связаться</h3>
                     <p class="footer-text">Не стесняйтесь связаться с нами по электронной почте</p>
@@ -222,17 +206,14 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div class="footer-bottom">
-                <a href="#" class="logo">
+                <a href="#hero-link" class="logo">
                     <img src="./img/logo.svg" alt="Webovio Logo">
                 </a>
-
                 <a href="https://alexrozhkov.com" target="_blank" class="logo-right">
                     <small class=" copyright copyright-logo">Сделано с любовью от</small>
                 </a>
-
             </div>
         </div>
     </footer>
